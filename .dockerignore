@@ -1,0 +1,14 @@
+# python
+*.pyc
+__pycache__/
+
+# git
+.git
+.gitignore
+
+# docker
+Dockerfile
+.dockerignore
+
+# editors
+/.vscode
