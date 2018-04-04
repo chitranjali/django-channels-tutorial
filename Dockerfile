@@ -1,4 +1,4 @@
-FROM python:3.5
+FROM python:latest
 
 ENV PYTHONUNBUFFERED 1
 
@@ -6,7 +6,7 @@ COPY . /app
 
 RUN pip install -r /app/requirements.txt
 
-WORKDIR /app/mysite
+WORKDIR /app/project
 
 EXPOSE 8000
 
