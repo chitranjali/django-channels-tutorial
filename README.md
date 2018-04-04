@@ -2,12 +2,10 @@
 
 - Build and run the project:
 
-      docker build -t myapp .
-      docker run --rm -d -p 80:8000 myapp
+      docker-compose up
 
-- Run the project for development purpose (with shared codebase to the container for automatic reloading):
+- Run a specific command in the container:
 
-      docker build -t myapp .
-      docker run --rm -it -p 80:8000 -v $(pwd):/app myapp bash
+      docker-compose exec channels <command>
 
 Open http://localhost/ to see the app

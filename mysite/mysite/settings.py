@@ -58,3 +58,12 @@ STATIC_URL = '/static/'
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
 ASGI_APPLICATION = 'mysite.routing.application'
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('redis', 6379)],
+        },
+    },
+}
